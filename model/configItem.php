@@ -19,7 +19,7 @@ class ConfigItem{
         $this->id=$arr["id"];
         $this->key=$arr["key"];
         $this->section=$arr["section"];
-        $this->value=$arr["section"];
+        $this->value=$arr["value"];
         return $this;
     }
 }

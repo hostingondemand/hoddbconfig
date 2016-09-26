@@ -22,5 +22,6 @@ class ConfigItem{
         $this->value=$arr["value"];
         return $this;
     }
+    function _saved(){}
 }
 ?>

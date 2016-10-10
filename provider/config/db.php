@@ -1,5 +1,5 @@
 <?php
-    namespace modules\maxdbconfig\provider\config;
+    namespace modules\hoddbconfig\provider\config;
     use lib\provider\baseprovider\BaseConfigProvider;
 
     class Db extends baseConfigProvider{
@@ -12,7 +12,7 @@
             static $loaded=false;
             if(!$loaded){
                 $loaded=true;
-                $items=$this->service->maxdbconfig->getAllItems();
+                $items=$this->service->hoddbconfig->getAllItems();
                 foreach($items as $item){
                     $this->values[$item->key][$item->section]=$item;
                 }
@@ -36,7 +36,7 @@
         {
             $item=$this->getItem($key,$section);
             $item->value=$val;
-            $this->service->maxdbconfig->saveItem($item);
+            $this->service->hoddbconfig->saveItem($item);
         }
 
         function contains($key,$section)

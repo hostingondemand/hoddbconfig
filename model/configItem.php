@@ -1,5 +1,5 @@
 <?php
-namespace modules\maxdbconfig\model;
+namespace modules\hoddbconfig\model;
 use lib\model\BaseModel;
 
 class ConfigItem{

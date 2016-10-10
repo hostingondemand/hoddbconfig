@@ -1,12 +1,12 @@
-<?php namespace modules\maxdbconfig\patch;
-    use modules\maxpatch\lib\patch\BasePatch;
+<?php namespace modules\hoddbconfig\patch;
+    use modules\hodpatch\lib\patch\BasePatch;
 
     class Install extends BasePatch{
 
         function patch()
         {
 
-            $this->patch->table("maxdbconfig")
+            $this->patch->table("hoddbconfig")
                 ->addField("key", "varchar(50)")->addIndex("key")
                 ->addField("section","varchar(50)")->addIndex("section")
                 ->addField("value","text")

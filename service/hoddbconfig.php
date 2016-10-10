@@ -1,17 +1,17 @@
 <?php
-namespace modules\maxdbconfig\service;
+namespace modules\hoddbconfig\service;
 use lib\service\BaseService;
 
-class Maxdbconfig extends  BaseService{
+class hoddbconfig extends  BaseService{
     function getAllItems(){
-        $items= $this->db->select("maxdbconfig")
+        $items= $this->db->select("hoddbconfig")
             ->ignoreParent()
             ->fetchAllModel("configItem");
         return $items;
     }
 
     function saveItem($item){
-            $this->db->saveModel($item,"maxdbconfig");
+            $this->db->saveModel($item,"hoddbconfig");
     }
 }
 ?>

@@ -1,8 +1,8 @@
 <?php
 namespace modules\hoddbconfig\model;
-use lib\model\BaseModel;
+use core\Base;
 
-class ConfigItem{
+class ConfigItem extends Base{
     var $id;
     var $key;
     var $section;

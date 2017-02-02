@@ -1,5 +1,6 @@
 <?php
     namespace modules\hoddbconfig\provider\config;
+    use core\Loader;
     use lib\provider\baseprovider\BaseConfigProvider;
 
     class Db extends baseConfigProvider{
@@ -10,9 +11,12 @@
 
         function getItem($key,$section){
             static $loaded=false;
+
             if(!$loaded){
                 $loaded=true;
+                Loader::goModule("hoddbconfig");
                 $items=$this->service->hoddbconfig->getAllItems();
+                Loader::goBackModule();
                 foreach($items as $item){
                     $this->values[$item->key][$item->section]=$item;
                 }

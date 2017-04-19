@@ -1,5 +1,5 @@
 <?php namespace modules\hoddbconfig\patch;
-    use lib\patch\BasePatch;
+    use hodphp\lib\patch\BasePatch;
 
     class Install extends BasePatch{
 

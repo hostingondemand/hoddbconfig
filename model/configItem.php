@@ -22,6 +22,16 @@ class ConfigItem extends Base{
         $this->value=$arr["value"];
         return $this;
     }
+
+    function toArray(){
+        return [
+            "id"=>$this->id,
+            "key"=>$this->key,
+            "section"=>$this->section,
+            "value"=>$this->value
+        ];
+    }
+
     function _saved(){}
 }
 ?>

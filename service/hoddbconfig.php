@@ -1,6 +1,6 @@
 <?php
 namespace modules\hoddbconfig\service;
-use hodphp\lib\service\BaseService;
+use framework\lib\service\BaseService;
 
 class hoddbconfig extends  BaseService{
     function getAllItems(){

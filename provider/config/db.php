@@ -1,7 +1,7 @@
 <?php
     namespace modules\hoddbconfig\provider\config;
-    use hodphp\core\Loader;
-    use hodphp\lib\provider\baseprovider\BaseConfigProvider;
+    use framework\core\Loader;
+    use framework\lib\provider\baseprovider\BaseConfigProvider;
 
     class Db extends baseConfigProvider{
 

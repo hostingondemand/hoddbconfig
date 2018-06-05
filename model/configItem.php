@@ -1,6 +1,6 @@
 <?php
 namespace modules\hoddbconfig\model;
-use hodphp\core\Base;
+use framework\core\Base;
 
 class ConfigItem extends Base{
     var $id;
